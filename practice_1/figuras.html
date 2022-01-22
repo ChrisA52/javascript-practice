@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <title>Geometric figures | JavaScript Practice #1</title>
+    <link rel="stylesheet" type="text/css" href="./figuras.css">
+</head>
+<body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+
+    <nav class="title">
+        <h1>
+            Geometric Shapes
+        </h1>
+    </nav>
+
+    <header class="subtitle">
+        <p>This is the first exercise on the JavaScript's practice course.  Calculate the area and the perimeter</p>
+    </header>
+
+    <div class="cards-container">
+        <section class="section">
+            <div class="container-head-square">
+                <h2>Square</h2>
+                <div class="square"></div>
+            </div>
+            <h3>Enter the measure of the sides of the square</h3>
+
+            <form>
+                <label for="InputCuadrado" class="label">
+                    Sides
+                </label>
+                <input id="InputCuadrado" type="number" placeholder="Side measurement" class="input input-cuadrado">
+                <div class="buttons">
+                    <button type="button" onclick="calcularPerimetroCuadrado()" class="perimeter-button">
+                        Calculate perimeter
+                    </button>
+                    <button type="button" onclick="calcularAreaCuadrada()" class="area-button">
+                        Calculate area
+                    </button>
+                </div>
+                <div class="result">
+                    <output id="OutputCuadrado">Result: </output>
+                </div>
+            </form>
+        </section>
+        
+        <section>
+            <div class="container-head-circle">
+                <h2>Circle</h2>
+                <div class="circle"></div>
+            </div>
+            <h3>Enter the measure of the radius of the circle</h3>
+            <form>
+                <label for="InputCirculo">
+                    Radius
+                </label>
+                <input id="InputCirculo" type="number" placeholder="Radius measurement">
+                <div>
+                    <button type="button" onclick="calcularPerimetroCirculo()">
+                        Calculate perimeter
+                    </button>
+                    <button type="button" onclick="calcularAreaCirculo()">
+                        Calculate area
+                    </button>
+                </div>
+                <div class="result">
+                    <output id="OutputCirculo">Result: </output>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <div class="container-head-triangle">
+                <h2>Triangle</h2>
+                <div class="triangle"></div>
+            </div>
+            <h3>Enter the measures of your triangle</h3>
+            <form>
+                <label for="InputTriangulo1">
+                        Side 1
+                </label>
+                <input id="InputTriangulo1" type="number" placeholder="Side 1 measurement">
+
+                <label for="InputTriangulo2">
+                        Side 2
+                </label>
+                <input id="InputTriangulo2" type="number" placeholder="Side 2 measurement">
+
+                <label for="InputTriangulo3">
+                        Base
+                </label>
+                <input id="InputTriangulo3" type="number" placeholder="Base measurement">
+
+                <label for="InputTriangulo4">
+                        Height
+                </label>
+                <input id="InputTriangulo4" type="number" placeholder="Height measurement">
+                
+                <div>
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                        Calculate perimeter
+                    </button>
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        Calculate area
+                    </button>
+                </div>
+
+                <div class="result">
+                    <output id="OutputTriangulo">Result: </output>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <div class="container-head-isosceles">
+                <h2>Isosceles Triangle</h2>
+                <div class="isosceles"></div>
+            </div>
+            <h3>Enter the measurements of your isoceles triangle and calculate its height</h3>
+            
+            <form>
+                <label for="InputIsoceles1">
+                        Side 1
+                </label>
+                <input id="InputIsoceles1" type="number" placeholder="Side 1 measurement">
+
+                <label for="InputIsoceles2">
+                        Side 2
+                </label>
+                <input id="InputIsoceles2" type="number" placeholder="Side 2 measurement">
+
+                <label for="InputIsoceles3">
+                        Base
+                </label>
+                <input id="InputIsoceles3" type="number" placeholder="Base measurement">
+                
+                <div class="altura">
+                    <button type="button" onclick="calcularAltura()" class="altura-button">
+                        Calculate height
+                    </button>
+                </div>
+
+                <div class="result">
+                    <output id="OutputIsoceles">Result: </output>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <div class="wrapper">
+        <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../practice_1/figuras.html">Practice_1</a></li>
+        <li><a href="../practice_2/descuentos.html">Practice_2</a></li>
+        <li><a href="../practice_3/average.html">Practice_3</a></li>
+        <li><a href="../practice_4/salaries.html">Practice_4</a></li>
+        </ul>
+    </div>
+
+    <script src="./figuras.js"></script>
+</body>
+</html>

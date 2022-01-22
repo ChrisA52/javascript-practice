@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="interest.css">
+    <title>Salary analysis | JavaScript Practice #4</title>
+</head>
+<body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+
+    <nav class="title">
+        <h1>
+            Compound interest calculator
+        </h1>
+    </nav>
+
+    <header  class="subtitle">
+        <p>This is the last open challenge on the JavaScript's practice course. Calculate your compound interest</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Step 1: Inicial investment</h2>
+
+            <form id="form" class="form">
+                <div class="info">
+                    <div class="text">
+                        <p>Inicial investment</p>
+                        <p>Amount of money you have available to initially invest.</p>
+                    </div>
+                    
+                    <input type="number" id="inicial" placeholder="Enter the numbers here">
+                </div>
+            </form>
+
+            <h2>Step 2: Contribution</h2>
+
+            <form id="form" class="form">
+                <div class="info border-text">
+                    <div class="text">
+                        <p>Monthly contribution (In progress)</p>
+                        <p>This field is not yet completed. The amount you plan to add to principal each month, or a negative number for the amount you plan to withdraw each month.</p>
+                    </div>
+                    <div>
+                        <input type="number" id="contribution" placeholder="Enter the numbers here">
+                    </div>
+                </div>
+            </form>
+            <form id="form" class="form">
+                <div class="info">
+                    <div class="text">
+                        <p>Amount of time in years</p>
+                        <p>Amount of time, in years, that you plan to save.</p>
+                    </div>
+                    <div>
+                        <input type="number" id="years" placeholder="Enter the numbers here">
+                    </div>
+                </div>
+            </form>
+
+            <h2>Step 3: Interest rate</h2>
+
+            <form id="form" class="form">
+                <div class="info">
+                    <div class="text">
+                        <p>Estimated interest rate</p>
+                        <p>Your estimated annual interest rate.</p>
+                    </div>
+                    
+                    <input type="number" id="rate" placeholder="Enter the numbers here">
+                </div>
+            </form>
+
+            <h2>Step 4: Capitalization</h2>
+
+            <form id="form" class="form">
+                <div class="info">
+                    <div class="text">
+                        <p>Compounding frequency</p>
+                        <p>Number of times per year that interest is compounded.</p>
+                    </div>
+                    
+                    <select name="capitalization-options" id="selector">
+                        <option disabled="">Select an option</option>
+                        <option value="anually">Anually</option>
+                        <option value="semi-annually">Semi-annually</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="daily">Daily</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="button">
+                <button type="button" onclick="calculateCompoundInterest()">Calculate</button>
+            </div>
+
+            <div class="result">
+                <div>
+                    <p id="Result">Your result here</p>
+                    <p id="Result2"></p>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+    <div class="wrapper">
+        <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../practice_1/figuras.html">Practice_1</a></li>
+        <li><a href="../practice_2/descuentos.html">Practice_2</a></li>
+        <li><a href="../practice_3/average.html">Practice_3</a></li>
+        <li><a href="../practice_4/salaries.html">Practice_4</a></li>
+        </ul>
+    </div>
+    
+    <script src="salaries.js"></script>
+    <script src="analysis.js"></script>
+    <script src="openChallenge.js"></script>
+</body>
+</html>

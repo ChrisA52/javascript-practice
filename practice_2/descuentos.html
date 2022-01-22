@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <title>Percentages and Discounts | JavaScript Practice #2</title>
+    <link rel="stylesheet" type="text/css" href="./descuentos.css">
+</head>
+<body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    
+    <nav class="title">
+        <h1>
+            Percentages and Discounts
+        </h1>
+    </nav>
+    
+    <header  class="subtitle">
+        <p>This is the second exercise on the JavaScript's practice course. A discount calculator for any product</p>
+    </header>
+    
+    <div class="container">
+        <section>
+            <h2>Calculate the final price of your products with discount</h2>
+
+            <form>
+                
+                <input type="number" id="InputPrice" placeholder="Enter your product's price here">
+                
+                <input type="number" id="InputDiscount" placeholder="Enter your product's discount here">
+                
+                <input type="text" id="InputCupon" placeholder="Enter your coupon's surprise here">
+
+                <div class="button">
+                    <button type="button" onclick="onClickButtonPriceDiscount()">Calculate price</button>
+                    <button type="button" onclick="onClickCuponDiscount()">Calculate coupon</button>
+                </div>
+
+                <p id="ResultP" class="ResultP">Your result here</p>
+            </form>
+        </section>
+    </div>
+
+    <div class="wrapper">
+        <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../practice_1/figuras.html">Practice_1</a></li>
+        <li><a href="../practice_2/descuentos.html">Practice_2</a></li>
+        <li><a href="../practice_3/average.html">Practice_3</a></li>
+        <li><a href="../practice_4/salaries.html">Practice_4</a></li>
+        </ul>
+    </div>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>

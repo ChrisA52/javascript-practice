@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./average.css">
+    <title>Average, median, and mode | JavaScript Practice #3</title>
+</head>
+<body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+
+    <nav class="title">
+        <h1>
+            Average, median and mode
+        </h1>
+    </nav>
+    
+    <header  class="subtitle">
+        <p>This is the third exercise on the JavaScript's practice course. Calculate the average, median, mode and something more</p>
+    </header>
+    
+    <div class="container">
+        <section>
+            <h2>Calculate the average, the median and the mode</h2>
+
+            <form id="form" class="form">
+                <div class="info">
+                    <input type="number" id="Input" placeholder="Enter the numbers here">
+                    <button type="button" onclick="addElement()" id="button">Add</button>
+                </div>
+
+                <p id="List" class="List">Your number's list here</p>
+
+                <div class="button">
+                    <button type="button" onclick="calcularMediaAritmetica()">Get the average</button>
+                    <button type="button" onclick="calcularMediana()">Get the median</button>
+                    <div>
+                        <button type="button" onclick="calcularModa()">Get the mode</button>
+                        <button type="button" onclick="calcularMediaArmonica()">Get the harmonic mean</button>
+                    </div>
+                </div>
+
+                <p id="Result" class="Result">Your result here</p>
+            </form>
+        </section>
+    </div>
+
+    <div class="wrapper">
+        <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../practice_1/figuras.html">Practice_1</a></li>
+        <li><a href="../practice_2/descuentos.html">Practice_2</a></li>
+        <li><a href="../practice_3/average.html">Practice_3</a></li>
+        <li><a href="../practice_4/salaries.html">Practice_4</a></li>
+        </ul>
+    </div>
+
+    <script src="./average.js"></script>
+</body>
+</html>
